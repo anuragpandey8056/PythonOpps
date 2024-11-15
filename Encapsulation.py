@@ -7,8 +7,16 @@ class Student:
         Student.city="Bhopal"
         state="MP"                          #LOCAL VARIABLE
     @classmethod                            #CLASS METHOD
-    def new2():
+    def new2(cls):
         cls.schoolcode=101
     @staticmethod                           #STATIC METHOD
     def new3():
         print("welcome")
+
+obj = Student("anurag")
+obj.new1()
+print(Student.city)
+obj.new2()
+obj.new3()
+
+ 
